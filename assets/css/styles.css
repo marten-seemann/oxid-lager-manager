@@ -1,0 +1,128 @@
+div.dd-container .dd-select {
+  height: 26px; }
+div.dd-container .dd-selected, div.dd-container .dd-option {
+  padding: 3px 7px 3px 7px !important; }
+  div.dd-container .dd-selected .dd-selected-image, div.dd-container .dd-selected .dd-option-image, div.dd-container .dd-option .dd-selected-image, div.dd-container .dd-option .dd-option-image {
+    margin-top: 3px;
+    margin-right: 8px; }
+  div.dd-container .dd-selected label, div.dd-container .dd-option label {
+    line-height: 0.75em;
+    color: #333333; }
+div.dd-container .dd-selected-text {
+  padding-top: 3px; }
+div.dd-container .dd-option {
+  padding-top: 10px !important;
+  padding-bottom: 6px !important; }
+
+body {
+  margin-left: 25px;
+  margin-right: 10px; }
+
+header {
+  margin: 5px 0 5px 0;
+  padding-bottom: 6px;
+  height: 34px;
+  border-bottom: 1px solid #eeeeee; }
+  header h1 {
+    width: 50%;
+    float: left;
+    margin: 0;
+    font-size: 32px; }
+    header h1 #help {
+      margin-left: 70px; }
+  header #header_functions_right {
+    margin-right: 20px;
+    margin-top: 0; }
+    header #header_functions_right > div {
+      float: left;
+      margin-top: 4px; }
+    header #header_functions_right > div:not(:first-child) {
+      margin-left: 22px; }
+  header #stock_manager_language_switcher_wrapper > div:first-child, header #oxid_language_switcher_wrapper > div:first-child {
+    float: left;
+    padding-top: 5px;
+    margin-right: 8px; }
+  header #stock_manager_language_switcher_wrapper > div:last-child, header #oxid_language_switcher_wrapper > div:last-child {
+    float: right; }
+
+#main {
+  padding-top: 10px; }
+
+#products_wrapper .view_options div {
+  float: left; }
+  #products_wrapper .view_options div:not(:last-child) {
+    margin-right: 40px; }
+
+#modal_help .remind {
+  color: red; }
+#modal_help .variant {
+  padding-left: 14px; }
+
+#products {
+  clear: both;
+  margin-bottom: 6px !important; }
+  #products form {
+    margin-bottom: 0; }
+  #products thead th, #products thead td {
+    vertical-align: middle; }
+  #products tbody td {
+    padding: 3px 4px;
+    font-size: 12px; }
+  #products tbody tr:hover td {
+    background-color: #eeeeee !important; }
+  #products tbody tr.row_selected td {
+    background-color: #dddddd !important; }
+  #products tbody tr.article-inactive td.title {
+    font-style: italic; }
+  #products tbody tr.variant {
+    font-size: 11px; }
+    #products tbody tr.variant .title {
+      padding-left: 14px; }
+  #products tbody tr.remind td {
+    color: red; }
+  #products tbody td.is-active {
+    text-align: center; }
+  #products tbody td.price, #products tbody td.bprice, #products tbody td.tprice {
+    text-align: right; }
+  #products tbody .price, #products tbody .bprice, #products tbody .tprice, #products tbody .stock, #products tbody .varstock, #products tbody .stock_remindamount {
+    text-align: right; }
+
+.noty_message {
+  padding: 18px 50px !important; }
+  .noty_message .noty_text {
+    font-size: 1.3em; }
+
+div.dataTables_length {
+  float: right;
+  width: auto; }
+  div.dataTables_length label {
+    float: left;
+    text-align: left; }
+  div.dataTables_length select {
+    width: 50px; }
+
+div.dataTables_filter label {
+  float: right; }
+
+div.dataTables_info {
+  padding-top: 8px;
+  width: 100%; }
+
+div.dataTables_paginate {
+  float: right;
+  margin: 0; }
+
+table.table thead .sorting, table.table thead .sorting_asc, table.table thead .sorting_desc, table.table thead .sorting_asc_disabled, table.table thead .sorting_desc_disabled {
+  vertical-align: middle;
+  cursor: pointer;
+  *cursor: hand; }
+table.table thead .sorting {
+  background: url(../datatables/media/images/sort_both.png) no-repeat center right; }
+table.table thead .sorting_asc {
+  background: url(../datatables/media/images/sort_asc.png) no-repeat center right; }
+table.table thead .sorting_desc {
+  background: url(../datatables/media/images/sort_desc.png) no-repeat center right; }
+table.table thead .sorting_asc_disabled {
+  background: url(../datatables/media/images/sort_asc_disabled.png) no-repeat center right; }
+table.table thead .sorting_desc_disabled {
+  background: url(../datatables/media/images/sort_desc_disabled.png) no-repeat center right; }

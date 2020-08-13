@@ -1,0 +1,13 @@
+/config.php
+
+/build/Lager-Manager
+/build/Lager-Manager-v*
+/build/*.zip
+/build/encoder/encrypted*
+/build/encoder/license.txt
+/build/productive
+/build/tmp
+/build/copy_this
+
+/.htaccess
+/.htpasswd

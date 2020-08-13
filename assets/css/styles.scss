@@ -1,0 +1,185 @@
+@import "mods-ddslick";
+
+$remind_color: red;
+$variant_padding: 14px;
+
+body {
+  margin-left: 25px;
+  margin-right: 10px;
+}
+
+header {
+  margin: 5px 0 5px 0;
+  padding-bottom: 6px;
+  height: 34px;
+  border-bottom: 1px solid #eeeeee;
+  // @media #{$media-tablet}
+  //   margin: 8px 0 2px 0
+  //   padding-bottom: 3px
+  //   #refresh
+  //     display: none
+  h1 {
+    width: 50%;
+    float: left;
+    margin: 0;
+    font-size: 32px;
+    #help {
+      margin-left: 70px;
+      // @media #{$media-tablet}
+      //   margin-left: 50px
+
+    }
+  }
+  #header_functions_right {
+    margin-right: 20px;
+    margin-top: 0;
+    > div {
+      float: left;
+      margin-top: 4px;
+    }
+    > div:not(:first-child) {
+      margin-left: 22px;
+    }
+  }
+  #stock_manager_language_switcher_wrapper, #oxid_language_switcher_wrapper {
+    > div:first-child {
+      float: left;
+      padding-top: 5px;
+      margin-right: 8px;
+    }
+    > div:last-child {
+      float: right;
+    }
+  }
+}
+
+#main {
+  padding-top: 10px;
+}
+
+
+#products_wrapper {
+  .view_options {
+    div {
+      float: left;
+      &:not(:last-child) {
+        margin-right: 40px;
+      }
+    }
+  }
+}
+
+#modal_help {
+  .remind {
+    color: $remind_color;
+  }
+  .variant {
+    padding-left: $variant_padding;
+  }
+}
+
+#products {
+  clear: both;
+  margin-bottom: 6px !important;
+  form {
+    margin-bottom: 0;
+  }
+  thead {
+    th, td {
+      vertical-align: middle;
+    }
+  }
+  tbody {
+    td {
+      padding: 3px 4px;
+      font-size: 12px;
+    }
+    tr:hover td {
+      background-color: #eeeeee !important;
+    }
+    tr.row_selected td {
+      background-color: #dddddd !important;
+    }
+    tr.article-inactive td.title {
+      font-style: italic;
+    }
+    tr.variant {
+      font-size: 11px;
+      .title {
+        padding-left: $variant_padding;
+      }
+    }
+    tr.remind td {
+      color: $remind_color;
+    }
+    td.is-active {
+      text-align: center;
+    }
+    td.price, td.bprice, td.tprice {
+      text-align: right;
+    }
+    .price, .bprice, .tprice, .stock, .varstock, .stock_remindamount {
+      text-align: right;
+    }
+  }
+}
+
+// modify the noty notifications
+.noty_message {
+  padding: 18px 50px !important;
+  .noty_text {
+    font-size: 1.3em;
+  }
+}
+
+// Boostrapify the DataTables
+div.dataTables_length {
+  float: right;
+  width: auto;
+  label {
+    float: left;
+    text-align: left;
+  }
+  select {
+    width: 50px;
+  }
+}
+
+div.dataTables_filter label {
+  float: right;
+}
+
+div.dataTables_info {
+  padding-top: 8px;
+  width: 100%;
+}
+
+div.dataTables_paginate {
+  float: right;
+  margin: 0;
+}
+
+table.table {
+  thead {
+    .sorting, .sorting_asc, .sorting_desc, .sorting_asc_disabled, .sorting_desc_disabled {
+      vertical-align: middle;
+      cursor: pointer;
+      *cursor: hand;
+    }
+    .sorting {
+      background: url(../datatables/media/images/sort_both.png) no-repeat center right;
+    }
+    .sorting_asc {
+      background: url(../datatables/media/images/sort_asc.png) no-repeat center right;
+    }
+    .sorting_desc {
+      background: url(../datatables/media/images/sort_desc.png) no-repeat center right;
+    }
+    .sorting_asc_disabled {
+      background: url(../datatables/media/images/sort_asc_disabled.png) no-repeat center right;
+    }
+    .sorting_desc_disabled {
+      background: url(../datatables/media/images/sort_desc_disabled.png) no-repeat center right;
+    }
+  }
+}

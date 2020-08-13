@@ -1,0 +1,28 @@
+// modify the ddslick (language selector dropdown)
+div.dd-container {
+  .dd-select {
+    height: 26px;
+  }
+
+  .dd-selected, .dd-option {
+    padding: 3px 7px 3px 7px !important;
+
+    .dd-selected-image, .dd-option-image {
+      margin-top: 3px;
+      margin-right: 8px;
+    }
+    label {
+      line-height: 0.75em;
+      color: #333333;
+    }
+  }
+
+  .dd-selected-text {
+    padding-top: 3px;
+  }
+
+  .dd-option {
+    padding-top: 10px !important;
+    padding-bottom: 6px !important;
+  }
+}
